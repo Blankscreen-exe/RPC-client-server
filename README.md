@@ -11,17 +11,22 @@ An RPC client which can interact with a synchronous RPC server to initiate funct
 
 ### Installation
 
+Write your functions and your classes in their respective `*_repo.py` files.
+
 The `.env` file is already primed so it can be used as it is.
 
 ```sh
 # activate the environment
 pipenv install
 pipenv shell
+
 # run the server
 python3 run_server.py
+
 # run the client
 python3 run_client.py
 ```
 
+### TODOs:
 
-
+- Enable functionality for instances
