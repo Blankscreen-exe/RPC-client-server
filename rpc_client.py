@@ -9,7 +9,7 @@ load_dotenv()
 SIZE=1024
 
 class RPCClient:
-    def __init__(self, host:str=os.environ.get('SERVER_HOST', 'localhost'), port:int=os.environ.get('SERVER_PORT', 8080)) -> None:
+    def __init__(self, host:str=os.environ.get('SERVER_HOST', 'localhost'), port:int=os.environ.get('SERVER_PORT', 8000)) -> None:
         self.__sock = None
         self.__address = (host, port)
 

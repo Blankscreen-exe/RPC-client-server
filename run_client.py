@@ -1,7 +1,13 @@
 from rpc_client import RPCClient
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+print("PORT = ", os.environ.get('SERVER_PORT'))
+print("HOST = ", os.environ.get('CLIENT_HOST'))
 # TODO: use env variables
-client = RPCClient('0.0.0.0', 8080)
+client = RPCClient(os.environ.get('CLIENT_HOST', '0.0.0.0'), int(os.environ.get('SERVER_PORT', 8000)))
 
 print("\033[91m\bReady to accept Remote Procedure Calls ...")
 print("e.g. function_name(param_1, param_2=123)")

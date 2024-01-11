@@ -11,7 +11,7 @@ SIZE=1024
 
 class RPCServer:
 
-    def __init__(self, host:str="0.0.0.0", port:int=int(os.environ.get('SERVER_PORT', 8080))) -> None:
+    def __init__(self, host:str="0.0.0.0", port:int=int(os.environ.get('SERVER_PORT', 8000))) -> None:
         self.host = host
         self.port = port
         self.address = host, port
